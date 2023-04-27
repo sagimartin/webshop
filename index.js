@@ -224,7 +224,7 @@ function initInteractions(stock) {
     orderButtons[i].addEventListener("click", function (event) {
       // anonymus function expression
       const name = event.target.itemName;
-      const item = findItemByName(name);
+      const item = findItemByName(stock, name);
       addItemToBasket(item);
       renderBasket();
     });
